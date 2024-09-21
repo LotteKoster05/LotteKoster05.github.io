@@ -38,7 +38,6 @@
     <div class="container">
       <h1 class="display-4">Lotte Koster</h1>
       <p class="lead">Developer en Schrijver</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Contact me </a>
     </div>
   </section>
 
@@ -112,23 +111,10 @@
 <script>
     document.getElementById('submitForm').addEventListener('click', function(event) {
       event.preventDefault();
-    }; 
+    }
+
   
-      fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-      .then(response => response.json())
-      .then(data => {
-        alert('Email sent successfully');
-      })
-      .catch((error) => {
-        alert('Error:', error);
-      });
-    });
+
   </script> 
 
     <div class="container">
