@@ -112,13 +112,7 @@
 <script>
     document.getElementById('submitForm').addEventListener('click', function(event) {
       event.preventDefault();
-      var email = document.getElementById('email').value; 
-      var bedrijf = document.getElementById('bedrijf').value;
-      var bericht = document.getElementById('bericht').value;
-      var formData = {
-        bedrijf: bedrijf,
-        bericht: bericht
-      };
+    }; 
   
       fetch('/send-email', {
         method: 'POST',
