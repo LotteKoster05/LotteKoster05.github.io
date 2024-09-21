@@ -103,50 +103,16 @@
         </div>
       </div>
     </div>
-  </section>
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact</h2>
-      <div class="col">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="naam">Naam:</label>
-              <input type="text" class="form-control" id="naam">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="text" class="form-control" id="email">
-            </div>
-          </div>
-        </div>
         <div class="text-center">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label for="bedrijf">Bedrijf:</label>
-              <input type="text" class="form-control" id="bedrijf">
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label for="bericht">Bericht: </label>
-              <input type="text" class="form-control" id="bericht">
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary"> Neem contact op </button>
         </div>
       </div>
     </div>
     
 <script>
     document.getElementById('submitForm').addEventListener('click', function(event) {
-      event.preventDefault(); 
+      event.preventDefault();
+      var email = document.getElementById('email').value; 
       var bedrijf = document.getElementById('bedrijf').value;
       var bericht = document.getElementById('bericht').value;
       var formData = {
